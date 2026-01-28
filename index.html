@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Friendly Website</title>
+
+    <meta name="description" content="Mobile friendly website created by Sharath">
+    <meta name="author" content="Sharath">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 1px solid #444;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            padding: 15px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        @media (min-width: 600px) {
+            nav {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+        }
+        @media (min-width: 900px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Website</h1>
+    <p>Mobile Friendly Design</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h2>About</h2>
+        <p>This website works on mobile, tablet, and desktop.</p>
+    </div>
+    <div class="card">
+        <h2>Services</h2>
+        <p>Web Design, Development, SEO</p>
+    </div>
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: example@gmail.com</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Sharath</p>
+</footer>
+
+</body>
+</html>
